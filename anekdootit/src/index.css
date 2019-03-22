@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #103572;
+  text-align: center;
+  animation: colfade 3s
+}
+@keyframes colfade {
+  from  {background-color: #0b2551;}
+  to    {background-color: #103572;}
+}
+
+.container {
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from  {opacity: 0;}
+  to    {opacity: 1;}
+}
+
+.header {
+  font-size: 75pt;
+}
+.anecdote-container {
+  font-family: "Fjalla One";
+  font-size: 20pt;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: white;
+  width: 45vw;
+  height: 25vh;
+}
+
+button {
+  background-color: #21252d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  margin: 0 3px 0 3px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.likes {
+  color: white;
+  font-size: 13px;
+}
+
+@media (max-width: 980px) {
+  .anecdote-container {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 580px) {
+  .anecdote-container {
+    width: 95vw;
+    height: 35vh;
+  }
+
+  .header {
+    font-size: 55pt;
+  }
+}
+
